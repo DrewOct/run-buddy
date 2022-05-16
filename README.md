@@ -1,4 +1,4 @@
-# Run Buddy, Inc.
+# Run Buddy, Inc
 
 ## Purpose
 A website that offers fitness training resources
@@ -12,3 +12,5 @@ https://lorantino.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Andy Seymour
+
+### &copy Run Buddy, Inc.
