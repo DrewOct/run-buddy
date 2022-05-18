@@ -4,13 +4,12 @@
     box-sizing: border-box;
 }
 body {
-    /* more on this crazy alphanumerical value in a minute! */
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
     }
 
+    /*-- HEADER AND/OR NAV BAR STYLES START */
 header {
-    /* apply styles to <header> */
     padding: 20px 35px;
     background-color: #39a6b2;
     display: flex;
@@ -46,15 +45,9 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+/* HEADER AND/OR NAV BAR STYLES END */
 
-header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #fce138;
-    margin: 0;
-    display: inline;
-}
-
+/* FOOTER STYLES START */
 footer {
     display: flex;
     background: #fce138;
@@ -78,12 +71,14 @@ footer div {
 footer a {
     color: #024e76
 }
+/* END FOOTER STYLES */
 
+/* STYLE FOR ALL SECTION TAGS */
 section {
     padding: 60px;
 }
 
-/* Hero Style Start */
+/* Hero Styles Start */
 .hero {
     background-image: url("../images/hero-bg.jpeg");
     background-size: cover;
@@ -93,6 +88,20 @@ section {
     flex-wrap: wrap;
 }
 
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
+}
 .hero-form {
     background-color: #fce138;
     padding: 20px;
@@ -100,10 +109,6 @@ section {
     border-style: solid;
     border-width: 3px;
     border-color: #024e76;
-}
-
-.hero-form {
-    margin: 5px 0 15px 0;
     margin: 3.5%;
     width: 40%;
 }
@@ -138,22 +143,27 @@ section {
     padding: 10px 20px;
     font-size: 16px;
 }
-
-.hero-cta {
-    width: 35%;
-    text-align: right;
-    margin: 3.5%;
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.3;
-}
-
-.hero-cta h2 {
-    font-style: italic;
-    font-size: 55px;
-    color: #fce138;
-}
 /* Hero Style End */
+
+/* SECTION TITLE STYLES START */
+.section-title {
+    font-size: 55px;
+    color: #024e76;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.primary-border {
+    border-color: #fce138;
+}
+
+.secondary-border {
+    border-color: #39a6b2;
+}
+/* SECTION TITLE STYLES END */
 
 .intro h2 {
     font-size: 55px;
@@ -165,15 +175,7 @@ section {
     display: inline-block;
 }
 
-.intro p {
-    line-height: 1.7;
-    color: #39a6b2;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-}
-
+/* WHAT YOU DO STYLES START */
 .steps {
     background: #fce138;
 }
@@ -201,102 +203,83 @@ section {
     flex-wrap: wrap;
     align-items: center;
 }
-.steps h2 {
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #39a6b2;
-}
 
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+ }
+ 
+.step-img img {
+     max-width: 100%;
+ }
+ 
 .step-text {
     flex: 12;
 }
+
+.step-text p {
+     color: #39a6b2;
+     font-size: 18px;
+ }
 
 .step-text h4 {
     font-size: 26px;
     line-height: 1.5;
     color: #024e76
 }
+/* WHAT YOU DO STYLES END */
 
-.step-img {
-   flex: 1 12%;
-   margin-right: 20px;
-}
 
-.step-img img {
-    max-width: 100%;
-}
+/* WHAT WE DO STYLES */
 
-.step-text p {
+.intro p {
+    line-height: 1.7;
     color: #39a6b2;
-    font-size: 18px;
-}
-
-.section-title {
-    font-size: 55px;
-    color: #024e76;
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
     text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
 }
+/* WHAT WE DO STYLES END */
 
-.primary-border {
-    border-color: #fce138;
-}
-
-.secondary-border {
-    border-color: #39a6b2;
-}
-
-
+/* MEET THE TRAINERS START */
 .trainers {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: flex;
+    justify-content: space-around;
 }
 
 .trainer {
-    width: 900px;
-    margin: 0 auto 30px auto;
+    margin: 20px;
     background: #024e76;
     color: #fce138;
-    overflow: auto;
+    flex: 1;
 }
 
 .trainer img {
-    width: 35%;
-    float: left;
+    width: 100%;
 }
 
 .trainer-bio {
-    padding: 35px;
-    float: left;
-    width: 65%;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
+    padding: 25px;
+    line-height: 1.3;
 }
 
 .trainer-bio h3 {
-    font-size: 32px;
-    margin-bottom: 8px;
+    font-size: 28px;
 }
 
 .trainer-bio h4 {
     font-weight: lighter;
-    font-size: 26px;
-    margin-bottom: 25px;
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .trainer-bio p {
     font-size: 17px;
-    line-height: 1.3;
+ 
 }
 
 .section {
