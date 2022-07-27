@@ -8,7 +8,7 @@ A website that offers fitness training resources
 * CSS
 
 ## Website
-https://lorantino.github.io/run-buddy/
+https://drewoct.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Andy Seymour
